@@ -1,12 +1,45 @@
-# React + Vite
+Real-Time Task Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time collaborative Kanban-style task board built with:
 
-Currently, two official plugins are available:
+- React
+- Firebase Realtime Database
+- Tailwind CSS
+- DND Kit for drag-and-drop functionality
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Demo
+
+https://drive.google.com/file/d/1jEigfJtI7Emu-NevnDLe9PfFleai3-u7/view?usp=sharing
+
+
+
+ Features
+
+1) Add, edit, delete tasks  
+2) Add, rename, delete columns  
+3) Drag-and-drop tasks and columns  
+4) Real-time sync across users  
+5) User presence indicator  
+5) Persistent storage with Firebase  
+
+
+
+ Tech Stack
+
+1) Frontend: React, Tailwind CSS
+2) Backend: Firebase Realtime Database
+3) Drag-and-Drop: DND Kit
+4) Deployment: Netlify
+
+
+
+ How to Run Locally
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+
