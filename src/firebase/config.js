@@ -1,13 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
+import dotenv from "dotenv";
+dotenv.config();
 const firebaseConfig = {
-  apiKey: "AIzaSyDo-tdAzgLKRTeVN1GnGzdaoOUEOkZQ4ZA",
-  authDomain: "task-board-f2995.firebaseapp.com",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   databaseURL: "https://task-board-f2995-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "task-board-f2995",
-  storageBucket: "task-board-f2995.firebasestorage.app",
-  messagingSenderId: "859062169632",
-  appId: "1:859062169632:web:dd4273217ba0b590dc0c45",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: "G-M7VT69VE6M"
 };
 const app = initializeApp(firebaseConfig);
