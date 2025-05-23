@@ -50,7 +50,7 @@ const Board = () => {
   };
 
   const handleAddTask = (columnId) => {
-    const title = prompt("Enter task title");
+    const title = prompt("What's the task?");
     if (!title) return;
 
     const taskId = uuidv4();
